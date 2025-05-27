@@ -1,0 +1,101 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply base font and background */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: white;
+  padding: 15px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar button {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.navbar button:hover {
+  opacity: 0.9;
+}
+
+/* Specific button colors */
+.home-btn {
+  background-color: #4f8cff;
+  color: white;
+}
+
+.book-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.student-btn {
+  background-color: #a85cf9;
+  color: white;
+}
+
+.teacher-btn {
+  background-color: #ffc107;
+  color: black;
+}
+
+.logout-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+/* Banner / Alert section */
+.banner {
+  background-color: #ff3b3b;
+  color: white;
+  text-align: center;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Generic Container */
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Responsive Grid if needed */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Add transitions and interactivity */
+button {
+  transition: transform 0.1s ease;
+}
+
+button:active {
+  transform: scale(0.97);
+}
